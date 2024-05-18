@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import { Header } from "@/components/Header";
+import Header from "@/components/Header";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import ClientProviders from "@/components/ClientProviders";
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <ClientProviders>
       <html lang="en">
-        <body className={inter.className}>
+        <body className='flex flex-col min-h-screen'>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
