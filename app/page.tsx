@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import heroBgImage from "../images/landingPageImage/heroImage.gif";
 export default function Home() {

@@ -1,9 +1,10 @@
 import React from "react";
 import CheckOutButton from "./CheckOutButton";
+import Link from "next/link";
 const tiers = [
   {
     name: "Starter",
-    id: "Starter_id",
+    id: null,
     href: "#",
     priceMonthly: "Free",
     description: "Get Chatting right away with anyone, anywhere!",
@@ -85,12 +86,12 @@ function PricingCard({ redirect }: { redirect: boolean }) {
             </ul>
           </div>
           {redirect ? (
-            <a
+            <Link
               className="mt-8 block rounded-md bg-indigo-600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 cursor-pointer disabled:opacity-80"
               href="/register"
             >
               Get started today
-            </a>
+            </Link>
           ) : arr.id && <CheckOutButton/> }
         </div>
       ))}
